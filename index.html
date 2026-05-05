@@ -1,0 +1,385 @@
+<!-- Open index.html directly in browser or use Live Server. No server or build step required. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DINOCO DOMINION — Simple Investing. Long-Term Wealth.</title>
+  <meta name="description" content="Learn index fund investing in the simplest way possible. Built for beginners worldwide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- ============ SECTION: NAVIGATION ============ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand" aria-label="DINOCO DOMINION home"><span class="glow-cyan">D</span>INOCO <span class="glow-cyan">D</span>OMINION</a>
+
+      <ul class="nav-links">
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#simulator">Simulator</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#cta">Join</a></li>
+      </ul>
+
+      <a href="#cta" class="btn-primary nav-action" style="padding:10px 22px;font-size:0.9rem;">Start Free ($0)</a>
+
+      <button id="hamburger" class="hamburger" type="button" aria-label="Open navigation" aria-controls="mobile-nav">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-nav" aria-hidden="true">
+    <button id="mobile-close" type="button" aria-label="Close navigation">×</button>
+    <a href="#learn">Learn</a>
+    <a href="#simulator">Simulator</a>
+    <a href="#philosophy">Philosophy</a>
+    <a href="#cta">Join</a>
+  </div>
+
+  <!-- ============ SECTION: HERO ============ -->
+  <section id="hero" class="hero-section">
+    <div class="hero-orb orb-1" aria-hidden="true"></div>
+    <div class="hero-orb orb-2" aria-hidden="true"></div>
+    <div class="hero-orb orb-3" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span>🌍 Financial education for the next generation</span>
+      </div>
+
+      <h1 class="hero-title">
+        Simple Investing.<br>
+        <span class="gradient-text">Long-Term Wealth.</span>
+      </h1>
+
+      <p class="hero-subtitle">We teach you how to build wealth using index funds — the same strategy used by the world's most successful long-term investors. No complexity. No hype. Just results.</p>
+
+      <div class="hero-actions">
+        <a href="#cta" class="btn-primary">Start Free ($0) →</a>
+        <a href="#learn" class="btn-secondary">How It Works</a>
+      </div>
+
+      <div class="hero-proof">
+        <div class="avatar-stack" aria-hidden="true">
+          <span>A</span>
+          <span>P</span>
+          <span>R</span>
+        </div>
+        <p>1,200+ beginners already learning</p>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <p>scroll</p>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: INTERACTIVE CHAT LEARNING ============ -->
+  <section id="learn" class="section section-secondary">
+    <div class="section-inner">
+      <p class="section-label animate-on-scroll">LEARN</p>
+      <h2 class="section-title animate-on-scroll">Ask Anything. Get Instant Answers.</h2>
+      <p class="section-subtitle animate-on-scroll">Tap a question below to learn. No signup required.</p>
+
+      <div class="chat-shell animate-on-scroll">
+        <div id="chat-window">
+          <div id="chat-display">
+            <div class="chat-message bot show">
+              <div class="chat-avatar">D</div>
+              <div class="chat-bubble">Hey! I'm your Dinoco guide. Tap a question below to start learning 👇</div>
+            </div>
+          </div>
+
+          <div id="chat-questions">
+            <button class="chat-btn btn-ghost" type="button" data-q="1">What is investing?</button>
+            <button class="chat-btn btn-ghost" type="button" data-q="2">What is an index fund?</button>
+            <button class="chat-btn btn-ghost" type="button" data-q="3">How do I start?</button>
+            <button class="chat-btn btn-ghost" type="button" data-q="4">What is compounding?</button>
+            <button class="chat-btn btn-ghost" type="button" data-q="5">How much do I need?</button>
+            <button class="chat-btn btn-ghost" type="button" data-q="6">What is a SIP?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: SIMPLICITY VS HYPE ============ -->
+  <section id="compare" class="section section-primary">
+    <div class="section-inner">
+      <p class="section-label animate-on-scroll">THE DIFFERENCE</p>
+      <h2 class="section-title animate-on-scroll">Calm Beats Chaos. Every Time.</h2>
+      <p class="section-subtitle with-bottom animate-on-scroll">The market is full of noise. Index fund investing ignores all of it.</p>
+
+      <div class="compare-grid">
+        <article class="compare-card hype-card animate-on-scroll" data-delay="0">
+          <p class="compare-label hype-label">❌ THE NOISE</p>
+
+          <div class="ticker-list">
+            <div class="ticker-row ticker-1">
+              <span>HYPE.CO</span>
+              <span>$412.00</span>
+              <span class="ticker-up">+14.2%</span>
+            </div>
+            <div class="ticker-row ticker-2">
+              <span>MOON.X</span>
+              <span>$0.0004</span>
+              <span class="ticker-down">-82.1%</span>
+            </div>
+            <div class="ticker-row ticker-3">
+              <span>PUMP.AI</span>
+              <span>$89.30</span>
+              <span class="ticker-up">+44.7%</span>
+            </div>
+            <div class="ticker-row ticker-4">
+              <span>DUMP.DAO</span>
+              <span>$1.20</span>
+              <span class="ticker-down">-67.3%</span>
+            </div>
+            <div class="ticker-row ticker-5">
+              <span>FOMO.ETF</span>
+              <span>$234.10</span>
+              <span class="ticker-up">+3.1%</span>
+            </div>
+          </div>
+
+          <div class="market-alerts">
+            <div class="alert-box">🚨 Breaking: Analyst upgrades HYPE.CO to Strong Buy</div>
+            <div class="alert-box">⚡ MOON.X crashes 82% overnight — experts shocked</div>
+            <div class="alert-box">🔴 FOMO selling accelerates — act NOW</div>
+          </div>
+
+          <p class="hype-bottom">Exhausting. Unpredictable. Losing game.</p>
+        </article>
+
+        <article class="compare-card simple-card animate-on-scroll" data-delay="100">
+          <p class="compare-label simple-label">✅ THE STRATEGY</p>
+
+          <div class="simple-metric">
+            <div class="glow-green">+1,247%</div>
+            <p>S&amp;P 500 · 30 year return</p>
+          </div>
+
+          <div class="growth-bars" aria-hidden="true">
+            <div class="growth-bar" style="--bar-height:30%;"></div>
+            <div class="growth-bar" style="--bar-height:45%;"></div>
+            <div class="growth-bar" style="--bar-height:55%;"></div>
+            <div class="growth-bar" style="--bar-height:70%;"></div>
+            <div class="growth-bar" style="--bar-height:100%;"></div>
+          </div>
+
+          <div class="strategy-list">
+            <div class="strategy-row">
+              <span>✓</span>
+              <p>No daily decisions required</p>
+            </div>
+            <div class="strategy-row">
+              <span>✓</span>
+              <p>Works while you sleep</p>
+            </div>
+            <div class="strategy-row">
+              <span>✓</span>
+              <p>Statistically beats most fund managers</p>
+            </div>
+          </div>
+
+          <p class="simple-bottom">Peaceful. Proven. Profitable.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: HOW IT WORKS ============ -->
+  <section id="howitworks" class="section section-secondary">
+    <div class="section-inner">
+      <p class="section-label animate-on-scroll">THE PROCESS</p>
+      <h2 class="section-title animate-on-scroll">Four Steps to Start Building Wealth</h2>
+      <p class="section-subtitle with-bottom animate-on-scroll">You don't need a finance degree. You need a plan.</p>
+
+      <div class="steps-grid">
+        <article class="step-card card-base animate-on-scroll" data-delay="0">
+          <p class="step-number gradient-text">01</p>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="14" r="7" stroke="#00D4FF" stroke-width="2" />
+            <path d="M8 34C9.8 26.5 14.2 23 20 23C25.8 23 30.2 26.5 32 34" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <h3>Create an Account</h3>
+          <p>Sign up with any low-cost brokerage. Takes under 5 minutes. Free to open.</p>
+        </article>
+
+        <article class="step-card card-base animate-on-scroll" data-delay="100">
+          <p class="step-number gradient-text">02</p>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="14" stroke="#00D4FF" stroke-width="2" />
+            <path d="M20 6V20H34" stroke="#00D4FF" stroke-width="2" stroke-linejoin="round" />
+            <path d="M20 20L10 30" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <h3>Pick an Index Fund</h3>
+          <p>Choose a total market or S&amp;P 500 index fund. Low fees. Maximum diversification.</p>
+        </article>
+
+        <article class="step-card card-base animate-on-scroll" data-delay="200">
+          <p class="step-number gradient-text">03</p>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="7" y="9" width="26" height="24" rx="4" stroke="#00D4FF" stroke-width="2" />
+            <path d="M12 6V12M28 6V12M7 16H33" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" />
+            <path d="M15 25H25M25 25L21 21M25 25L21 29" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <h3>Set Monthly Auto-Invest</h3>
+          <p>Decide your monthly amount. Automate it. Even $10 counts. Consistency is everything.</p>
+        </article>
+
+        <article class="step-card card-base animate-on-scroll" data-delay="300">
+          <p class="step-number gradient-text">04</p>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path d="M6 30L15 21L22 26L34 10" stroke="#00FF88" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M26 10H34V18" stroke="#00FF88" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <h3>Watch It Compound</h3>
+          <p>Check in yearly, not daily. Time and compounding do the work. That is the entire strategy.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: GROWTH SIMULATOR ============ -->
+  <section id="simulator" class="section section-primary">
+    <div class="section-inner">
+      <p class="section-label animate-on-scroll">SIMULATOR</p>
+      <h2 class="section-title animate-on-scroll">See What Consistency Does</h2>
+      <p class="section-subtitle simulator-intro animate-on-scroll">Move the slider. Watch your wealth grow. No guesswork.</p>
+
+      <div class="simulator-shell animate-on-scroll">
+        <div class="simulator-controls">
+          <div class="control-group">
+            <label for="monthly-slider">MONTHLY INVESTMENT</label>
+            <span id="monthly-display" class="glow-cyan">$200</span>
+            <input id="monthly-slider" type="range" min="10" max="2000" step="10" value="200" />
+          </div>
+
+          <div class="control-group">
+            <label for="years-slider">YEARS TO INVEST</label>
+            <span id="years-display" class="glow-cyan">$20 yrs</span>
+            <input id="years-slider" type="range" min="1" max="40" step="1" value="20" />
+          </div>
+        </div>
+
+        <div class="results-row">
+          <div class="result-card">
+            <p>TOTAL INVESTED</p>
+            <span id="total-invested">$0</span>
+          </div>
+          <div class="result-card">
+            <p>ESTIMATED RETURNS</p>
+            <span id="total-returns" class="glow-green">$0</span>
+          </div>
+          <div class="result-card">
+            <p>FINAL VALUE</p>
+            <span id="final-value" class="glow-cyan">$0</span>
+          </div>
+        </div>
+
+        <div class="chart-wrap">
+          <canvas id="growth-chart" height="240"></canvas>
+        </div>
+
+        <p class="simulator-note">Assumes 8% avg annual return. For illustration only. Not financial advice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: PHILOSOPHY ============ -->
+  <section id="philosophy" class="section section-secondary">
+    <div class="section-inner">
+      <p class="section-label animate-on-scroll">PHILOSOPHY</p>
+      <h2 class="section-title animate-on-scroll">What We Believe</h2>
+      <p class="section-subtitle with-bottom animate-on-scroll">The principles behind every lesson we teach.</p>
+
+      <div class="philosophy-grid">
+        <article class="philosophy-card card-base animate-on-scroll" data-delay="0">
+          <div class="quote-mark gradient-text">"</div>
+          <h3>You don't need to be a genius to build wealth.</h3>
+          <p>The most successful investors in history didn't predict markets. They bought broadly, held patiently, and let compounding do the work.</p>
+        </article>
+
+        <article class="philosophy-card card-base animate-on-scroll" data-delay="100">
+          <div class="quote-mark gradient-text">"</div>
+          <h3>Consistency beats timing. Always.</h3>
+          <p>Nobody can predict the best day to invest. But investing the same amount every single month — regardless of market conditions — is proven to outperform trying to time the market.</p>
+        </article>
+
+        <article class="philosophy-card card-base animate-on-scroll" data-delay="200">
+          <div class="quote-mark gradient-text">"</div>
+          <h3>Complexity is a product. Simplicity is the edge.</h3>
+          <p>Wall Street profits from complexity. Index funds don't need complexity. The simpler your strategy, the fewer mistakes you make, and the better your long-term results.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: EMAIL CTA ============ -->
+  <section id="cta" class="section section-primary">
+    <div class="cta-outer animate-on-scroll">
+      <div class="cta-inner">
+        <span class="cta-emoji" aria-hidden="true">🚀</span>
+        <h2 class="section-title">Start Learning Free. Today.</h2>
+        <p>Join 1,200+ beginners getting weekly lessons on index funds, compounding, and long-term wealth. $0. No credit card. No fluff.</p>
+
+        <form id="join-form">
+          <label class="sr-only" for="join-email">Email address</label>
+          <input id="join-email" type="email" placeholder="your@email.com" required />
+          <button class="btn-primary" type="submit">Join Free ($0) →</button>
+        </form>
+
+        <div id="join-success" class="glow-green">🎉 Welcome to Dinoco Dominion. Check your inbox.</div>
+        <p class="cta-privacy">🔒 Zero spam. Unsubscribe any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: FOOTER ============ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand-col">
+          <a href="#hero" class="nav-brand"><span class="glow-cyan">D</span>INOCO <span class="glow-cyan">D</span>OMINION</a>
+          <p>Simple investing education for the next generation. Built for beginners worldwide.</p>
+        </div>
+
+        <div class="footer-link-col">
+          <p>EXPLORE</p>
+          <a href="#learn">Learn</a>
+          <a href="#simulator">Simulator</a>
+          <a href="#philosophy">Philosophy</a>
+          <a href="#cta">Join Free</a>
+        </div>
+
+        <div class="footer-link-col">
+          <p>LEGAL</p>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Dinoco Dominion. All rights reserved.</p>
+        <p>⚠️ For educational purposes only. Not financial advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/chat.js" defer></script>
+  <script src="assets/js/simulator.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
